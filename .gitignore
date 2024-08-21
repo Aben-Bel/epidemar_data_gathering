@@ -4,6 +4,7 @@
 # Ignore environment directories
 shapefilecheck/
 weatherprocessing/
+popenv
 
 # Python-related files
 __pycache__/
