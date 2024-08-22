@@ -35,8 +35,6 @@ def load_data():
 
     # Load population data
     population_data = pd.read_csv('population_data.csv')
-
-    # If not, you may need to adjust the following line
     population_data = population_data[['ADMIN3', 'year', 'popcount']]
 
     return weather_data, population_data
@@ -115,7 +113,7 @@ def simulate_malaria_cases(weather_data, population_data, num_years=20):
     print(merged_data['expected_cases'].describe())
 
     print("\nGenerating Negative Binomial-distributed cases")
-    # Set dispersion parameter (you may want to adjust this based on your data characteristics)
+    # Set dispersion parameter 
     dispersion = 1.5  # This assumes the variance is 1.5 times the mean (This is randomly picked value for testing)
 
     # Generate Negative Binomial-distributed cases with error handling
