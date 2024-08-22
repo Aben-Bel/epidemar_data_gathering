@@ -5,7 +5,7 @@
 shapefilecheck/
 weatherprocessing/
 popenv
-
+simulation
 # Python-related files
 __pycache__/
 *.py[cod]
